@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery Repeater</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div class="container">
+			<div class="center-content">
+				<!-- temporary page title goes here -->
+				<h2 style="text-align: center; margin-bottom: 20px; font-size: 22px; line-height: 1.5;">jQuery Repeater | Sort | Duplicate | Delete</h2>
+
+				<!-- start form section -->
+				<form class="form-section">
+					<div class="field-group"><!-- start field-group -->
+						<div class="group-title">
+							<h4>Group</h4>
+						</div>
+						<div class="cloneable-fieldset">
+
+							<!-- start original cloneable-item -->
+							<div class="cloneable-item cl-hidden">
+								<div class="cl-helper">
+									<i title="Sorting" class="cl-sorting fa fa-arrows"></i>
+									<i title="Duplicate" class="cl-clone fa fa-clone"></i>
+									<i title="Delete" class="cl-remove fa fa-times"></i>
+								</div>
+								<div class="cl-title">
+									<span class="cl-placeholder"></span>
+								</div>
+								<div class="cloneable-content">
+									<div class="cl-form-group">
+										<div class="cl-label">
+											<h4>Text</h4>
+										</div>
+										<div class="cl-field">
+											<input type="text" class="cl-title-val" />
+										</div>
+									</div>
+									<div class="cl-form-group">
+										<div class="cl-label">
+											<h4>CheckBox</h4>
+										</div>
+										<div class="cl-field">
+											<label class="cl-switch">
+											  <input type="checkbox" name="checkbox">
+											  <span class="cl-switch-ball"></span>
+											</label>
+										</div>
+									</div>
+									<div class="cl-form-group">
+										<div class="cl-label">
+											<h4>Textarea</h4>
+										</div>
+										<div class="cl-field">
+											<textarea name="textarea"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //end original .cloneable-item -->
+
+							<!-- clonable wrapper - all cloned item will be goes here -->
+							<div class="clonable-wrapper">
+
+							</div>
+
+							<!-- add new clonable-item button -->
+							<a href="#" class="cloneable-add">Add New</a>
+						</div>
+					</div><!-- //end .field-group -->
+				</form>
+				<!-- //end .form section -->
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/ui-shortable.min.js"></script>
+</body>
+</html>
